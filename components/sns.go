@@ -13,7 +13,7 @@ var (
 
 func ConfigTopics(stack *awscdk.Stack) {
 
-	firstTopic = awssns.NewTopic(*stack, jsii.String("Topic"), &awssns.TopicProps{
+	firstTopic = awssns.NewTopic(*stack, jsii.String("topic-1"), &awssns.TopicProps{
 		ContentBasedDeduplication: jsii.Bool(true),
 		DisplayName:               jsii.String("topic for test 1"),
 		Fifo:                      jsii.Bool(true),
