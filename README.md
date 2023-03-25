@@ -14,7 +14,7 @@ The `cdk.json` file tells the CDK toolkit how to execute your app.
 
 ## Run Local
 
-To run this project locally you have to install (docker)[https://www.docker.com/] and (cdklocal)[https://github.com/localstack/aws-cdk-local].
+To run this project locally you have to install [docker](https://www.docker.com/) and [cdklocal](https://github.com/localstack/aws-cdk-local).
 
 To start local stack execute:
 
@@ -30,8 +30,8 @@ cdklocal deploy
 
 ## Stack Components
 
-- 2 SQS Queues
-- 2 SQS DLQ Queues
-- 2 SNS Topics
-- 2 Subscription SQS to SNS
-- 2 Buckets S3
+- `2 SQS Queues`
+- `2 SQS DLQ Queues`
+- `2 SNS Topics`
+- `2 Subscription SQS to SNS`
+- `2 Buckets S3`
