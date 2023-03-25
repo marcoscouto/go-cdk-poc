@@ -1,0 +1,18 @@
+version: '3.9'
+
+services:
+
+  localstack:
+    container_name: localstack-cdk
+    image: localstack/localstack:1.3.1
+    ports:
+      - "4566:4566" # gateway
+      - "4576:4576" # sqs
+      - "4572:4572" # s3
+      - "4510-4559:4510-4559"  # external services port range
+    environment:
+      - SERVICES=sqs,sns,s3
+      - DEBUG=1
+      - DATA_DIR=/tmp/localstack/data
+      - AWS_ENDPOINT_URL=http://localhost:4566
+    network_mode: host
